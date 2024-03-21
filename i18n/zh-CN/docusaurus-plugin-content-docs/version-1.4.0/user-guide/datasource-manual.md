@@ -21,14 +21,14 @@ sidebar_position: 4
 数据源管理模块,服务名ps-data-source-manager。对数据源的进行基本的管理，对外提供数据源的新增，查询，修改，连接测试等http接口。对内提供了rpc服务 ，方便元数据查询模块通过rpc调用，查询数据库建立连接需要的必要信息。
 
 - [http接口文档](/api/http/linkis-ps-publicservice-api/data-source-manager-api.md)
-- http接口类 org.apache.linkis.metadatamanager.server.restful
-- rpc接口类 org.apache.linkis.metadatamanager.server.receiver
+- http接口类 org.apache.linkis.metadatamanager.server.restful 、org.apache.linkis.datasourcemanager.core.restful
+- rpc接口类 org.apache.linkis.metadatamanager.server.receiver 、org.apache.linkis.datasourcemanager.core.receivers
 
-** linkis-metedata-manager-server  **
+** linkis-metedata-query-server  **
 元数据查询模块,服务名ps-metadatamanager。提供对数据库元数据的基本查询功能,对外提供了http接口，对内提供了rpc服务，方便数据源管理模块，通过rpc调用，进行该数据源的连通性测试。
 - [http接口文档](/api/http/linkis-ps-publicservice-api/metadatamanager-api.md)
-- http接口类 org.apache.linkis.datasourcemanager.core.restful
-- rpc接口类 org.apache.linkis.datasourcemanager.core.receivers
+- http接口类 org.apache.linkis.metadata.query.server.restful
+- rpc接口类 org.apache.linkis.metadata.query.server.restful.receiver
 
 
 ### 1.3 处理逻辑
